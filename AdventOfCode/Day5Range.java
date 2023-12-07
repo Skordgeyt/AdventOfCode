@@ -1,24 +1,24 @@
 package AdventOfCode;
 
 public class Day5Range {
-    private int upperBound;
-    private int lowerBound;
-    private int destination;
+    private long upperBound;
+    private long lowerBound;
+    private long destination;
 
     public Day5Range(){
         upperBound = 0;
         lowerBound = 0;
     }
-    public Day5Range(int lowerBound, int upperBound, int destination){
+    public Day5Range(long destination, long lowerBound, long range){
         this.lowerBound = lowerBound;
-        this.upperBound = upperBound;
+        this.upperBound = lowerBound + (range-1);
         this.destination = destination;
     }
 
-    public boolean contains(int elem){
+    public boolean contains(long elem){
         return (lowerBound<=elem&&elem<=upperBound);
     }
-    public int give(int source){
+    public long give(long source){
         return destination + (source-lowerBound);
     }
 }

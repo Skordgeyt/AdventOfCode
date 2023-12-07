@@ -11,7 +11,7 @@ public class Day5Map {
         ranges.add(range);
     }
 
-    public int give(int source){
+    public long give(long source){
         for(Day5Range range: ranges){
             if(range.contains(source)){
                 return range.give(source);
