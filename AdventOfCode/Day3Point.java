@@ -1,4 +1,4 @@
-package AdventOfCode;
+
 
 public class Day3Point {
     private int value;

@@ -1,4 +1,4 @@
-package AdventOfCode;
+
 
 public class Day5Range {
     private long upperBound;

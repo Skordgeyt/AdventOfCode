@@ -1,19 +1,17 @@
-package AdventOfCode;
+
 
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Day5 {
     public static void main(String[] args) throws IOException{
-        final String SOURCE = "AdventOfCode\\day5input.txt";
+        final String SOURCE = "day5input.txt";
 
 
         Scanner fileReader = new Scanner(new File(SOURCE));
-        fileReader.next();
+        fileReader.next(); //remove "seed: "
         ArrayList<Long> seeds = new ArrayList<Long>();
         while(fileReader.hasNextLong()){
             seeds.add(fileReader.nextLong());

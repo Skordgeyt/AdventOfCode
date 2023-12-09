@@ -1,4 +1,4 @@
-package AdventOfCode;
+
 
 import java.util.ArrayList;
 
